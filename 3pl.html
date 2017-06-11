@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>3pl.</title>
+
+    <script src="scripts/tree.js"></script>
+    <script src="scripts/dtbs.js"></script>
+    <script src="scripts/3pl.js"></script>
+
+<!-- Where to put the script for the one page version. -->
+<!--
+    <script type="text/javascript"> 
+    </script>
+-->
+    <style type="text/css">
+      canvas { border: 1px solid black; }
+    </style>
+  </head>
+  <body onload="init(); draw();">
+    <div>
+    <canvas id="tutorial" width="505" height="505"></canvas>
+    <div style="text-align: center">
+       <button onclick="save();"> save </button>
+       <button onclick="load();"> load </button>
+    </div>
+    <p id="save_msg_1"></p>
+    <div style="text-align: center">
+       <button onclick="save_IDB();"> sv IDB </button>
+       <button onclick="load_IDB();"> ld IDB </button>
+    </div>
+    <p id="save_msg_2"></p>
+    </div>
+
+  </body>
+</html>
+
